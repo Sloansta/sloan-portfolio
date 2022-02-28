@@ -13,16 +13,14 @@ function Nav(props) {
     }, [currentPage]);
 
     return (
-        <header>
+        <header className="nav-container">
             <h2>
-                <a href="/">
-                    Sloan Boyce
-                </a>
+                Sloan Boyce
             </h2>
-            <nav>
-                <ul className="flex-row">
+            <nav className="container button-container">
+                <ul className="row">
                     {pages.map((page) => (
-                        <li key={page} onClick={() => setCurrentPage(page)}>
+                        <li key={page} onClick={() => setCurrentPage(page)} className="col-sm">
                             {page}
                         </li>
                     ))}

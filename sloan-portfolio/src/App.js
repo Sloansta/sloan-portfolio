@@ -4,7 +4,7 @@ import Nav from './components/Navigation'
 import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
-import "bootstrap";
+import Footer from './components/Footer'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div className="App">
+    <div className="App main-container">
       <Nav 
         page={pages}
         currentPage={currentPage}
@@ -24,6 +24,8 @@ function App() {
           {currentPage === "Projects" && <Project />}
           {currentPage === "Contact" && <Contact />}
         </main>
+
+      <Footer />
     </div>
   );
 }

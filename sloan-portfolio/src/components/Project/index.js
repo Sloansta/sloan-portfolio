@@ -17,9 +17,9 @@ function Project() {
     return (
        <div>
            <h2>Projects</h2>
-           <div className='cards'>
+           <div className='cards container'>
                {projectList.map(project => (
-                   <Card title={project.title} description={project.description} />
+                   <Card className="card" title={project.title} description={project.description} key={project.title} />
                ))}
            </div>
        </div>
