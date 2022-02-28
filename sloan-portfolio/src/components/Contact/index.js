@@ -3,6 +3,7 @@ import React from 'react';
 function Contact() {
     return (
         <div>
+            <h2>Contact Me</h2>
             <div className="about-section-body container">
                 <div>
                     <a href='http://www.github.com/Sloansta'>Github</a>
